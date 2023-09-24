@@ -1,0 +1,125 @@
+@import './assets//styles/scss//_variables.scss';
+
+
+a {
+  text-decoration: none;
+  display: 'block';
+  color: 'red';
+}
+
+.login-form-container {
+  
+  .input-container {
+    input[type=text] {
+      padding: 13px;
+      border: none;
+      font-weight: 400;
+    }
+  
+    input[type=text]:focus {
+      outline: none;
+    }
+  
+    input[type=text].error {
+      border: 1px solid red;
+    }
+    label {
+      font-weight: 400;
+    }
+   
+  }
+  Button {
+    font-weight: 600;
+    opacity: 0.8;
+  }
+ 
+}
+
+.layout-container {
+  display: flex;
+  overflow: hidden;
+
+  .main-container {
+    flex-grow: 1;
+    background-color: #eee;
+    min-Height: 100vh;
+    height: auto;
+  }
+}
+
+.component-title {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  margin: 0px;
+  font-weight: bold;
+
+}
+
+.outlet-box {
+  display: flex;
+  margin: 3rem;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.default-bttton {
+  background-color: #81d1d0;
+  padding: 8px 16px;
+  color: black;
+  opacity: 0.8;
+  font-weight: 400;
+  text-transform: initial;
+
+  &:hover {
+    box-shadow: 6px #81d1d0;
+    background-color: #81d1d0;
+  }
+}
+
+
+input[type='text'] {
+  border: none;
+
+  &:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none;
+  }
+}
+
+.react-date-range-picker {
+  font-size: 12px;
+  border-radius: 5px 0px 0px 5px;
+  padding: auto;
+  //pointer-events: none;
+}
+.react-date-picker-container {
+  right: 0;
+  position: relative;
+  div {
+    top: 43px;
+    div {
+      top: 0.6px;
+    }
+  }
+}
+
+.chart-date-range-picker {
+  width: 160px;
+  input[type='text']:read-only {
+  padding: 5px;
+}
+
+  &TextField {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  &:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none;
+  }
+}

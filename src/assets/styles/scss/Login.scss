@@ -1,0 +1,113 @@
+@import '../scss/variables';
+
+.login-page {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+    .login-left-side-img-container{
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        display: flex;
+        .login-page-logo {
+            padding: 2rem 0px 0px 2.5rem;
+            .myancare-logo {
+                width: 9%;
+            }
+        }
+        .login-page-img {
+            display: flex;
+            justify-items: center;
+            height: 100%;
+
+            .yin-thway-login-img {
+                width: 59%;
+                height: 80%;
+                align-items: center;
+                position: absolute;
+                padding-left: 18%;
+                //    width: 59%;
+                //height: 82%;
+                // padding: 6rem 6rem 0px;
+                
+            }
+        }
+    }
+    .login-box-container {
+        background-color: #cdedec ;
+        align-items: center;
+        justify-content: center;
+        display: flex ;
+        height: 100% ;
+        width: 100%;
+        height: 100vh;
+        border-radius: 5% 0px 0px 5%;
+        .login-form-container {
+            width: 90%;
+            padding: 6rem;
+            .login-title {
+                font-weight: bold;
+                font-size: 1.7rem ;
+                text-align: center;
+                align-content: center;
+                 opacity: 0.9;
+            }
+            .login-box {
+                .input-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                
+                
+            }
+            .error-message {
+                font-size: 15px;
+            }
+            .login-btn-container {
+                .login-submit-btn {
+                    text-transform: none;
+                    margin-top: 3; 
+                    background-color: #81d1d0;
+                    color: black;
+                    padding: 9px 5rem;
+                    border-radius: 20px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+@media (min-width: 1000px) {
+    .yin-thway-login-img {
+         width: 59%;
+         height: 82%;
+    }
+}
+
+
+// .login-container {
+//     position: relative;
+
+// }
+
+// .login-form {
+//     width: 90%;
+//     padding: 5rem;
+// }
+
+
+.login-input-box {
+    padding: 15px;
+    border: none;
+}
+
+.login-input-box::placeholder {
+    color: rgb(167, 163, 163);
+}
+

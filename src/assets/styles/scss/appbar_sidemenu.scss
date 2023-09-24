@@ -1,0 +1,136 @@
+@import '../scss/variables';
+
+.sidenav__heading {
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  &-logo {
+    background-image: url(../../../assets/images/yinthway_logo.png);
+    background-size: cover;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &-title {
+    margin: 0 0 0 0.5rem;
+    color: var(--white-theme-color);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    align-items: center;
+    display: flex;
+  }
+
+}
+
+.logout-container {
+  display: flex;
+}
+
+
+.user-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid #bdbdbd;
+  background-image: url(../../images/userImg.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.drawer-container {
+  display: flex;
+  background: #fff;
+
+  .list-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &.open {
+      padding: 0px 2rem;
+    }
+
+    .list-menu-item {
+      span {
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      &.open {
+
+        &:hover {
+          span {
+            color: var(--main-theme-color);
+
+          }
+        }
+
+        &.active {
+          background-color: var(--main-theme-color);
+          border-radius: 10px;
+          text-decoration: none;
+
+          .menu-icon {
+            filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(255deg) brightness(102%) contrast(101%);
+          }
+
+          a,
+          span {
+            color: var(--white-theme-color);
+          }
+        }
+
+        .menu-icon {
+          filter: invert(54%) sepia(0%) saturate(11%) hue-rotate(189deg) brightness(93%) contrast(84%);
+        }
+      }
+
+      &.close {
+
+        &:hover,
+        &.active {
+
+          .menu-icon,
+          .font-aws-menu-icon {
+            fill: var(--main-theme-color);
+            color: var(--main-theme-color);
+            filter: none;
+          }
+        }
+      }
+
+      .list-item-muted-label {
+        font-weight: 600;
+        opacity: 0.8;
+        font-size: 1.1rem;
+
+        &.close {
+          display: none;
+        }
+      }
+
+      .list-item-link {
+        text-decoration: none;
+
+        .list-item-text {
+          color: var(--gray-theme-color);
+          font-size: 0.5rem;
+          text-decoration: none;
+          opacity: 0;
+
+          &.open {
+            opacity: 1;
+          }
+        }
+
+        .menu-icon {
+          filter: invert(54%) sepia(0%) saturate(11%) hue-rotate(189deg) brightness(93%) contrast(84%);
+        }
+      }
+    }
+  }
+
+}

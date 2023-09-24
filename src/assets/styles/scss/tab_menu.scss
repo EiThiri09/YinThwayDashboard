@@ -1,0 +1,29 @@
+.tab-menu-container {
+
+    border: 1px solid #81d1d0;
+
+    .tab-menu-item {
+   
+        // padding: 7px 20px;
+        // background-color: white;
+        // font-size: 15px;
+        // border-radius: 0px;
+        // color: var(--main-theme-color);
+    
+        &.css-1ujsas3 {
+            padding: 7px 20px;
+            background-color: white;
+            font-size: 15px;
+            border-radius: 0px;
+            color: var(--main-theme-color);
+    
+            &:hover,&.active {
+                background-color: var(--main-theme-color);
+                color: var(--white-theme-color) ;
+                border-radius: 0px;
+            }
+        }
+        
+    }
+
+}

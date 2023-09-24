@@ -1,0 +1,45 @@
+@import '../scss/variables';
+
+.chart-component {
+    display: flex;
+    width: 100%;
+    background-color: var(--white-theme-color);
+    padding: 15px;
+    flex-direction: column ;
+
+    .chart-header {
+        display: flex; 
+        justify-content: space-between;
+        .chart-title {
+            font-weight: bold;
+        }
+        .date-range-container {
+            display: flex;
+            gap: 20px;
+            .date-range-label {
+                display: flex;
+                align-items: center;
+                color: var(---gray-theme-color);
+                gap: 8px;
+                
+            }
+        }
+    }
+    .chart-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 40px 5rem;
+        flex-direction: column;
+        gap: 10px;
+        .gird-item {
+            //background-image: linear-gradient(red,green);
+            text-align: center;
+            padding: 14px 6%;
+            border-radius: 10px;
+            color: var(--white-theme-color);
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

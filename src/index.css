@@ -1,0 +1,18 @@
+@import './assets/styles/scss/_variables.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0px !important;
+  padding: 0px;
+  font-family: var(--bs-font-sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--bs-body-font-size);
+  font-weight:var(--bs-body-line-height);
+  color: var(--bs-body-color);
+}
+code {
+    font-family: var(--bs-font-sans-serif);
+  }
